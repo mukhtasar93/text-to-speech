@@ -20,21 +20,21 @@
 		</script>
 	</head>
 	<body>
-		<div class="bg-darkblue1 h-screen w-full px-2 py-32">
+		<div class="bg-darkblue1 h-full w-full px-2 py-32">
 			<div class="flex justify-center max-w-[480px] my-4 py-4 absolute inset-x-0 top-0 mx-auto px-2">
-				<img class="w-[60px]" src="favicon.png" alt="" />
+				<img class="animate-pulse hover:animate-none w-[80px]" src="favicon.png" alt="" />
 			</div>
 			<div class="max-w-[480px] mx-auto bg-darkblue2 px-4 py-8 border border-sm border-slate-500 rounded shadow-sm shadow-slate-200/30">
 				<div class="border-b mb-4">
 					<h2 class="font-mono text-3xl text-sky-500 font-bold mb-4 text-center">Text To Speech</h2>
 				</div>
 				<div class="flex flex-col py-2">
-					<p class="my-2 text-slate-200">Enter Text</p>
-					<textarea class="p-2 rounded-sm text-slate-800" name="" id="text"></textarea>
+					<p class="my-2 px-2 text-slate-200">Enter Text</p>
+					<textarea class="placeholder:italic placeholder:text-slate-400 p-2 rounded-sm text-slate-800" name="" id="text" placeholder="Enter text here..."></textarea>
 				</div>
 				<div class="flex flex-col mb-4 py-2 text-slate-200">
 					<p class="my-2">Select Voice</p>
-					<select class="px-2 py-2 rounded-sm" name="" id="voice">
+					<select class="my-2 px-2 py-3 rounded-sm text-slate-800" name="" id="voice">
 						<option value="Google Us English">Google Us English</option>
 					</select>
 				</div>

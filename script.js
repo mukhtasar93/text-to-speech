@@ -10,7 +10,7 @@ function voiceSpeech() {
 		let option = document.createElement("option");
 		option.text = voice.name;
 		voiceList.addEventListener(option);
-		console.log(option);
+		// console.log(option);
 	}
 }
 
@@ -32,7 +32,7 @@ speechButton.addEventListener("click", (e) => {
 		if (!synth.speaking) {
 			textToSpeech(textArea.value);
 		}
-		if (textArea.value > 80) {
+		if (textArea.value.length > 80) {
 			if (isSpeaking) {
 				synth.resume();
 				isSpeaking = false;
